@@ -6,17 +6,21 @@
 //  Copyright © 2019年 Zhenjia LU. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
+@property(nonatomic,strong) UITableView* tableView;
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.tableView = [[UITableView alloc] initWithFrame:(self.view.frame) style:(UITableViewStylePlain)];
+    self.tableView.delegate = self;
+    
 }
 
 
