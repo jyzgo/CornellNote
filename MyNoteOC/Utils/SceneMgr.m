@@ -9,6 +9,13 @@
 #import "SceneMgr.h"
 
 
+@interface SceneMgr()
+@property(nonatomic,strong) UIStoryboard * mainStoryBoard;
+@property(nonatomic,strong) UIViewController *mainViewController;
+
+@property(nonatomic,strong) NSMutableDictionary<NSString*,UIViewController*> *viewDict;
+@end
+
 @implementation SceneMgr
 
 
@@ -21,9 +28,12 @@
     return sharedMyManager;
 }
 
+
+
 -(instancetype) init{
     self = [super init];
-    
+    _mainStoryBoard =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    _viewDict = [NSMutableDictionary dictionaryWithCapacity:4];
     return self;
     
 }
@@ -32,9 +42,21 @@
 
 -(void) switchScene:(UIViewController*)viewCtrl identifier:(NSString*)identifier
 {
-    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController* vc =[mainStoryBoard instantiateViewControllerWithIdentifier :identifier];
-    [viewCtrl presentViewController:vc animated:YES completion:nil];
+    UIViewController* next = _viewDict[identifier];
+    if(next == nil)
+    {
+        NSLog(@"add new controller iden is %@ ",identifier);
+    next =[_mainStoryBoard instantiateViewControllerWithIdentifier :identifier];
+        [_viewDict setValue:next forKey:identifier];
+    }
+
+    [viewCtrl presentViewController:next animated:YES completion:nil];
+
+}
+
+-(void) popView
+{
+    [self.mainViewController.navigationController popViewControllerAnimated:YES];
 }
 
 @end

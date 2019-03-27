@@ -19,4 +19,6 @@
 
 -(void) switchScene:(UIViewController*) viewController identifier:(NSString*) identifier;
 
+-(void) popView;
+
 @end

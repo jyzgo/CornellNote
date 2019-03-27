@@ -7,11 +7,9 @@
 //
 
 #import "SelectViewController.h"
-
+#import "SceneMgr.h"
 @interface SelectViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *Challenge;
 
-@property (weak, nonatomic) IBOutlet UIButton *ViewAll;
 @end
 
 @implementation SelectViewController
