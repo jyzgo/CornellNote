@@ -18,4 +18,16 @@
 }
 */
 
++(instancetype) tableViewWithFrame:(CGRect)frame delegate:(id<UITableViewDataSource,UITableViewDelegate>)delegate
+{
+    WBTableView * tableView = [[self alloc] initWithFrame:frame style:UITableViewStylePlain];
+    [tableView setDelegate:delegate];
+    [tableView setDataSource:delegate];
+    [tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"wb"];
+    
+    
+    return  tableView;
+}
+
 @end

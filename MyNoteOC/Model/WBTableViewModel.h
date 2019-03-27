@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface WBTableViewModel : NSObject
+@interface WBTableViewModel : NSObject<UITableViewDataSource,UITableViewDelegate>
+
++(instancetype) model;
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBTableViewCell : NSTableViewCell
+@interface WBTableViewCell : UITableViewCell
+@property (nonatomic, strong) UILabel *contentLabel;
+@property(nonatomic, strong) UIButton *addNewButton;
 
 @end

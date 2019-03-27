@@ -7,19 +7,36 @@
 //
 
 #import "MainViewController.h"
+#import "WBTableView.h"
+#import "WBTableViewModel.h"
+#import "SceneMgr.h"
 
 @interface MainViewController ()
-@property(nonatomic,strong) UITableView* tableView;
-
+@property(nonatomic,strong) WBTableView* tableView;
+@property(nonatomic,strong) WBTableViewModel *model;
 @end
 
 @implementation MainViewController
+- (IBAction)Login:(id)sender {
+    NSLog(@"Loggin");
+    [self GotoSeceondVie];
+}
+
+-(void) GotoSeceondVie
+{
+    [[SceneMgr sharedManager] switchScene:self identifier:@"select"];
+}
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.tableView = [[UITableView alloc] initWithFrame:(self.view.frame) style:(UITableViewStylePlain)];
-    self.tableView.delegate = self;
+//    [super viewDidLoad];
+//    [self setTitle:@"Test"];
+//    [self.view setBackgroundColor:[UIColor whiteColor]];
+//    // Do any additional setup after loading the view, typically from a nib.
+//    [self setModel:[WBTableViewModel model]];
+//    self.tableView = [WBTableView tableViewWithFrame:self.view.bounds delegate:self.model];
+//    self.tableView.rowHeight = 50;
+//    [self.view addSubview:self.tableView];
+
     
 }
 

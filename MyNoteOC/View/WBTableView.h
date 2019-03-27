@@ -10,4 +10,6 @@
 
 @interface WBTableView : UITableView
 
++(instancetype) tableViewWithFrame:(CGRect) frame delegate:(id<UITableViewDataSource,UITableViewDelegate>) delegate;
+
 @end

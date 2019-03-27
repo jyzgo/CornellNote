@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface SceneMgr : NSObject
+@interface SceneMgr : NSObject {
+
+}
+
+@property (nonatomic, retain) NSString *someProperty;
+
++ (id)sharedManager;
+
+-(void) switchScene:(UIViewController*) viewController identifier:(NSString*) identifier;
 
 @end
