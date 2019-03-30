@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DD352890C0D9C7276AF60B7 /* libPods-MyNoteOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96988F19D8B22AA20987223B /* libPods-MyNoteOC.a */; };
+		93F31FB9124E0C95E9AC1BDE /* libPods-MyNoteOCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E197B3E0C60BD8AE39215F7 /* libPods-MyNoteOCUITests.a */; };
+		A38EF851224F5B3700176CF3 /* EJLoginViewController_1.m in Sources */ = {isa = PBXBuildFile; fileRef = A38EF850224F5B3700176CF3 /* EJLoginViewController_1.m */; };
+		A38EF854224F721000176CF3 /* EJContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38EF853224F721000176CF3 /* EJContactViewController.m */; };
 		A392EDBA224AE55100578996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A392EDB9224AE55100578996 /* Main.storyboard */; };
 		A392EDBD224B078D00578996 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A392EDBC224B078D00578996 /* SelectViewController.m */; };
 		A392EDC0224B079C00578996 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A392EDBF224B079C00578996 /* ListViewController.m */; };
@@ -23,6 +27,7 @@
 		A3933CD12248B29A00B5007D /* WBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3933CD02248B29A00B5007D /* WBTableView.m */; };
 		A3933CD52248B60D00B5007D /* WBTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3933CD42248B60D00B5007D /* WBTableViewModel.m */; };
 		A3933CD82248D66900B5007D /* WBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3933CD72248D66900B5007D /* WBTableViewCell.m */; };
+		D73B1C9BA94F5075B5C63329 /* libPods-MyNoteOCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF97BCC07A6610E576EAC54 /* libPods-MyNoteOCTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF97BCC07A6610E576EAC54 /* libPods-MyNoteOCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNoteOCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECD8952AEDFE74917C40ED6 /* Pods-MyNoteOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNoteOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNoteOC/Pods-MyNoteOC.debug.xcconfig"; sourceTree = "<group>"; };
+		669961B6132F504125E87E7F /* Pods-MyNoteOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNoteOCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNoteOCTests/Pods-MyNoteOCTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E197B3E0C60BD8AE39215F7 /* libPods-MyNoteOCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNoteOCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96988F19D8B22AA20987223B /* libPods-MyNoteOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNoteOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38EF84F224F5B3700176CF3 /* EJLoginViewController_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJLoginViewController_1.h; sourceTree = "<group>"; };
+		A38EF850224F5B3700176CF3 /* EJLoginViewController_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJLoginViewController_1.m; sourceTree = "<group>"; };
+		A38EF852224F721000176CF3 /* EJContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJContactViewController.h; sourceTree = "<group>"; };
+		A38EF853224F721000176CF3 /* EJContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJContactViewController.m; sourceTree = "<group>"; };
 		A392EDB9224AE55100578996 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A392EDBB224B078D00578996 /* SelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
 		A392EDBC224B078D00578996 /* SelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
@@ -75,6 +89,10 @@
 		A3933CD42248B60D00B5007D /* WBTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBTableViewModel.m; sourceTree = "<group>"; };
 		A3933CD62248D66900B5007D /* WBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBTableViewCell.h; sourceTree = "<group>"; };
 		A3933CD72248D66900B5007D /* WBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBTableViewCell.m; sourceTree = "<group>"; };
+		A781E76AEBD1C48FC46B36B4 /* Pods-MyNoteOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNoteOCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNoteOCUITests/Pods-MyNoteOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF97079324B12D00F7D39469 /* Pods-MyNoteOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNoteOCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNoteOCUITests/Pods-MyNoteOCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAAAE078BCCCC530A83BFCD5 /* Pods-MyNoteOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNoteOCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNoteOCTests/Pods-MyNoteOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEE904485CAD373EFEF37F05 /* Pods-MyNoteOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNoteOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNoteOC/Pods-MyNoteOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD352890C0D9C7276AF60B7 /* libPods-MyNoteOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73B1C9BA94F5075B5C63329 /* libPods-MyNoteOCTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +116,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F31FB9124E0C95E9AC1BDE /* libPods-MyNoteOCUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		584EB92AAAF206D40F10B3C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ECD8952AEDFE74917C40ED6 /* Pods-MyNoteOC.debug.xcconfig */,
+				EEE904485CAD373EFEF37F05 /* Pods-MyNoteOC.release.xcconfig */,
+				EAAAE078BCCCC530A83BFCD5 /* Pods-MyNoteOCTests.debug.xcconfig */,
+				669961B6132F504125E87E7F /* Pods-MyNoteOCTests.release.xcconfig */,
+				A781E76AEBD1C48FC46B36B4 /* Pods-MyNoteOCUITests.debug.xcconfig */,
+				AF97079324B12D00F7D39469 /* Pods-MyNoteOCUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A392EDC4224B0A0B00578996 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +154,8 @@
 				A3933CB32248ABC600B5007D /* MyNoteOCTests */,
 				A3933CBE2248ABC600B5007D /* MyNoteOCUITests */,
 				A3933C992248ABC600B5007D /* Products */,
+				584EB92AAAF206D40F10B3C9 /* Pods */,
+				D7DA12D298B3BCCD4CD5940C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +172,10 @@
 		A3933C9A2248ABC600B5007D /* MyNoteOC */ = {
 			isa = PBXGroup;
 			children = (
+				A38EF84F224F5B3700176CF3 /* EJLoginViewController_1.h */,
+				A38EF850224F5B3700176CF3 /* EJLoginViewController_1.m */,
+				A38EF852224F721000176CF3 /* EJContactViewController.h */,
+				A38EF853224F721000176CF3 /* EJContactViewController.m */,
 				A392EDC4224B0A0B00578996 /* Utils */,
 				A3933CD22248B5E600B5007D /* Model */,
 				A3933CCE2248B23100B5007D /* View */,
@@ -204,6 +244,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D7DA12D298B3BCCD4CD5940C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96988F19D8B22AA20987223B /* libPods-MyNoteOC.a */,
+				0CF97BCC07A6610E576EAC54 /* libPods-MyNoteOCTests.a */,
+				8E197B3E0C60BD8AE39215F7 /* libPods-MyNoteOCUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3933CC42248ABC600B5007D /* Build configuration list for PBXNativeTarget "MyNoteOC" */;
 			buildPhases = (
+				A318BEF9F974DA915632262F /* [CP] Check Pods Manifest.lock */,
 				A3933C942248ABC600B5007D /* Sources */,
 				A3933C952248ABC600B5007D /* Frameworks */,
 				A3933C962248ABC600B5007D /* Resources */,
+				264959D14572189F38784450 /* [CP] Embed Pods Frameworks */,
+				1E6574E198903ADCC3EEDF1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3933CC72248ABC600B5007D /* Build configuration list for PBXNativeTarget "MyNoteOCTests" */;
 			buildPhases = (
+				24476CDE526D941BEF0BC4DE /* [CP] Check Pods Manifest.lock */,
 				A3933CAC2248ABC600B5007D /* Sources */,
 				A3933CAD2248ABC600B5007D /* Frameworks */,
 				A3933CAE2248ABC600B5007D /* Resources */,
+				2F6D083BF099F3340E417C53 /* [CP] Embed Pods Frameworks */,
+				7B674AFA95F7C7374521F81F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,9 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3933CCA2248ABC600B5007D /* Build configuration list for PBXNativeTarget "MyNoteOCUITests" */;
 			buildPhases = (
+				57BA8ED3427B7214FF7D2737 /* [CP] Check Pods Manifest.lock */,
 				A3933CB72248ABC600B5007D /* Sources */,
 				A3933CB82248ABC600B5007D /* Frameworks */,
 				A3933CB92248ABC600B5007D /* Resources */,
+				7A7FA8D2B42037F698CC8B77 /* [CP] Embed Pods Frameworks */,
+				C7942CA698105D55BDA42FFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +325,7 @@
 		A3933C902248ABC600B5007D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = EJ;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Zhenjia LU";
 				TargetAttributes = {
@@ -332,12 +392,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E6574E198903ADCC3EEDF1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNoteOC/Pods-MyNoteOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24476CDE526D941BEF0BC4DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		264959D14572189F38784450 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNoteOC/Pods-MyNoteOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F6D083BF099F3340E417C53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNoteOCTests/Pods-MyNoteOCTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57BA8ED3427B7214FF7D2737 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7FA8D2B42037F698CC8B77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNoteOCUITests/Pods-MyNoteOCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B674AFA95F7C7374521F81F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNoteOCTests/Pods-MyNoteOCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A318BEF9F974DA915632262F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7942CA698105D55BDA42FFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNoteOCUITests/Pods-MyNoteOCUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3933C942248ABC600B5007D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A392EDBD224B078D00578996 /* SelectViewController.m in Sources */,
+				A38EF854224F721000176CF3 /* EJContactViewController.m in Sources */,
 				A392EDC7224B0A7E00578996 /* SceneMgr.m in Sources */,
 				A392EDCA224B2EE600578996 /* EJStack.m in Sources */,
 				A3933CD12248B29A00B5007D /* WBTableView.m in Sources */,
@@ -348,6 +547,7 @@
 				A3933CA02248ABC600B5007D /* MainViewController.m in Sources */,
 				A3933CAB2248ABC600B5007D /* main.m in Sources */,
 				A3933C9D2248ABC600B5007D /* AppDelegate.m in Sources */,
+				A38EF851224F5B3700176CF3 /* EJLoginViewController_1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +700,7 @@
 		};
 		A3933CC52248ABC600B5007D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ECD8952AEDFE74917C40ED6 /* Pods-MyNoteOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +715,7 @@
 		};
 		A3933CC62248ABC600B5007D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE904485CAD373EFEF37F05 /* Pods-MyNoteOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +730,7 @@
 		};
 		A3933CC82248ABC600B5007D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAAE078BCCCC530A83BFCD5 /* Pods-MyNoteOCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +746,7 @@
 		};
 		A3933CC92248ABC600B5007D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669961B6132F504125E87E7F /* Pods-MyNoteOCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +762,7 @@
 		};
 		A3933CCB2248ABC600B5007D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A781E76AEBD1C48FC46B36B4 /* Pods-MyNoteOCUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89T33W2692;
@@ -572,6 +777,7 @@
 		};
 		A3933CCC2248ABC600B5007D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF97079324B12D00F7D39469 /* Pods-MyNoteOCUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89T33W2692;
