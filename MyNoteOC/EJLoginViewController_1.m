@@ -25,7 +25,7 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
   
     hud.label.text = @"Loading";
-    
+       
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
           [self performSegueWithIdentifier:@"contact" sender:nil];
         [hud hideAnimated:YES];
@@ -36,8 +36,9 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    EJContactViewController* des = segue.destinationViewController;
-    [des setAccountName:_accoutTextF.text];
+    EJContactViewController* des = (EJContactViewController*)segue.destinationViewController;
+    des.accountName = self.accoutTextF.text;
+ 
 }
 
 - (void)viewDidLoad {
@@ -46,6 +47,8 @@
     [_accoutTextF addTarget:self action:@selector(textChanged) forControlEvents:UIControlEventEditingChanged];
         [_pwdTextF addTarget:self action:@selector(textChanged) forControlEvents:UIControlEventEditingChanged];
     [self textChanged];
+    
+
 }
 
 -(void) textChanged{

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4DD352890C0D9C7276AF60B7 /* libPods-MyNoteOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96988F19D8B22AA20987223B /* libPods-MyNoteOC.a */; };
 		93F31FB9124E0C95E9AC1BDE /* libPods-MyNoteOCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E197B3E0C60BD8AE39215F7 /* libPods-MyNoteOCUITests.a */; };
+		A3069DA62250B302007FA268 /* EJQuestionDetailControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3069DA52250B302007FA268 /* EJQuestionDetailControllerViewController.m */; };
+		A373345F225360DE0040179F /* question.plist in Resources */ = {isa = PBXBuildFile; fileRef = A373345E225360DE0040179F /* question.plist */; };
+		A3733464225378B40040179F /* EJQuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3733463225378B40040179F /* EJQuestionManager.m */; };
+		A373346722537AAE0040179F /* EJQAItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A373346622537AAE0040179F /* EJQAItem.m */; };
+		A373346A22538E3D0040179F /* EJQuestionCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A373346922538E3D0040179F /* EJQuestionCellTableViewCell.m */; };
 		A38EF851224F5B3700176CF3 /* EJLoginViewController_1.m in Sources */ = {isa = PBXBuildFile; fileRef = A38EF850224F5B3700176CF3 /* EJLoginViewController_1.m */; };
 		A38EF854224F721000176CF3 /* EJContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38EF853224F721000176CF3 /* EJContactViewController.m */; };
 		A392EDBA224AE55100578996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A392EDB9224AE55100578996 /* Main.storyboard */; };
@@ -53,6 +58,15 @@
 		669961B6132F504125E87E7F /* Pods-MyNoteOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNoteOCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNoteOCTests/Pods-MyNoteOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E197B3E0C60BD8AE39215F7 /* libPods-MyNoteOCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNoteOCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96988F19D8B22AA20987223B /* libPods-MyNoteOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNoteOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3069DA42250B302007FA268 /* EJQuestionDetailControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJQuestionDetailControllerViewController.h; sourceTree = "<group>"; };
+		A3069DA52250B302007FA268 /* EJQuestionDetailControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJQuestionDetailControllerViewController.m; sourceTree = "<group>"; };
+		A373345E225360DE0040179F /* question.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = question.plist; sourceTree = "<group>"; };
+		A3733462225378B40040179F /* EJQuestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJQuestionManager.h; sourceTree = "<group>"; };
+		A3733463225378B40040179F /* EJQuestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJQuestionManager.m; sourceTree = "<group>"; };
+		A373346522537AAE0040179F /* EJQAItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJQAItem.h; sourceTree = "<group>"; };
+		A373346622537AAE0040179F /* EJQAItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJQAItem.m; sourceTree = "<group>"; };
+		A373346822538E3D0040179F /* EJQuestionCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EJQuestionCellTableViewCell.h; path = View/EJQuestionCellTableViewCell.h; sourceTree = "<group>"; };
+		A373346922538E3D0040179F /* EJQuestionCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EJQuestionCellTableViewCell.m; path = View/EJQuestionCellTableViewCell.m; sourceTree = "<group>"; };
 		A38EF84F224F5B3700176CF3 /* EJLoginViewController_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJLoginViewController_1.h; sourceTree = "<group>"; };
 		A38EF850224F5B3700176CF3 /* EJLoginViewController_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJLoginViewController_1.m; sourceTree = "<group>"; };
 		A38EF852224F721000176CF3 /* EJContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJContactViewController.h; sourceTree = "<group>"; };
@@ -176,6 +190,10 @@
 				A38EF850224F5B3700176CF3 /* EJLoginViewController_1.m */,
 				A38EF852224F721000176CF3 /* EJContactViewController.h */,
 				A38EF853224F721000176CF3 /* EJContactViewController.m */,
+				A373346822538E3D0040179F /* EJQuestionCellTableViewCell.h */,
+				A373346922538E3D0040179F /* EJQuestionCellTableViewCell.m */,
+				A3069DA42250B302007FA268 /* EJQuestionDetailControllerViewController.h */,
+				A3069DA52250B302007FA268 /* EJQuestionDetailControllerViewController.m */,
 				A392EDC4224B0A0B00578996 /* Utils */,
 				A3933CD22248B5E600B5007D /* Model */,
 				A3933CCE2248B23100B5007D /* View */,
@@ -185,6 +203,7 @@
 				A3933CA42248ABC600B5007D /* Assets.xcassets */,
 				A3933CA62248ABC600B5007D /* LaunchScreen.storyboard */,
 				A392EDB9224AE55100578996 /* Main.storyboard */,
+				A373345E225360DE0040179F /* question.plist */,
 				A3933CA92248ABC600B5007D /* Info.plist */,
 				A3933CAA2248ABC600B5007D /* main.m */,
 			);
@@ -240,6 +259,10 @@
 			children = (
 				A3933CD32248B60D00B5007D /* WBTableViewModel.h */,
 				A3933CD42248B60D00B5007D /* WBTableViewModel.m */,
+				A373346522537AAE0040179F /* EJQAItem.h */,
+				A373346622537AAE0040179F /* EJQAItem.m */,
+				A3733462225378B40040179F /* EJQuestionManager.h */,
+				A3733463225378B40040179F /* EJQuestionManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A373345F225360DE0040179F /* question.plist in Resources */,
 				A3933CA82248ABC600B5007D /* LaunchScreen.storyboard in Resources */,
 				A3933CA52248ABC600B5007D /* Assets.xcassets in Resources */,
 				A392EDBA224AE55100578996 /* Main.storyboard in Resources */,
@@ -537,10 +561,14 @@
 			files = (
 				A392EDBD224B078D00578996 /* SelectViewController.m in Sources */,
 				A38EF854224F721000176CF3 /* EJContactViewController.m in Sources */,
+				A3733464225378B40040179F /* EJQuestionManager.m in Sources */,
 				A392EDC7224B0A7E00578996 /* SceneMgr.m in Sources */,
 				A392EDCA224B2EE600578996 /* EJStack.m in Sources */,
+				A373346722537AAE0040179F /* EJQAItem.m in Sources */,
+				A373346A22538E3D0040179F /* EJQuestionCellTableViewCell.m in Sources */,
 				A3933CD12248B29A00B5007D /* WBTableView.m in Sources */,
 				A392EDC0224B079C00578996 /* ListViewController.m in Sources */,
+				A3069DA62250B302007FA268 /* EJQuestionDetailControllerViewController.m in Sources */,
 				A392EDC3224B07CB00578996 /* ChallengeViewController.m in Sources */,
 				A3933CD52248B60D00B5007D /* WBTableViewModel.m in Sources */,
 				A3933CD82248D66900B5007D /* WBTableViewCell.m in Sources */,
@@ -705,6 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89T33W2692;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = MyNoteOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyzgo.myNote.MyNoteOC;
@@ -720,6 +749,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89T33W2692;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = MyNoteOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyzgo.myNote.MyNoteOC;

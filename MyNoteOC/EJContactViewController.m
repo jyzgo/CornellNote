@@ -7,8 +7,11 @@
 //
 
 #import "EJContactViewController.h"
-
+#import "EJQuestionDetailControllerViewController.h"
+#import "EJQuestionManager.h"
+#import "EJQuestionCellTableViewCell.h"
 @interface EJContactViewController ()
+@property(nonatomic,strong) NSMutableArray *questions;
 
 @end
 
@@ -26,6 +29,15 @@
     [alertVc addAction:logoutAction];
     [self presentViewController:alertVc animated:YES completion:nil] ;
 }
+- (IBAction)AddBtnPressed:(id)sender {
+    [self performSegueWithIdentifier:@"questiontoadd" sender:nil];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+   EJQuestionDetailControllerViewController* questionAddView =  segue.destinationViewController;
+    [questionAddView setSeguestate:Add];
+}
 
 -(void)setAccountName:(NSString *)accountName
 {
@@ -36,7 +48,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [[EJQuestionManager sharedManager] loadFile];
+    [self.tableView registerClass:[EJQuestionCellTableViewCell class] forCellReuseIdentifier:@"question"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -52,12 +65,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return self.questions.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return 0;
 }
 
@@ -115,4 +128,6 @@
 }
 */
 
+- (IBAction)editMode:(UISwitch *)sender {
+}
 @end
