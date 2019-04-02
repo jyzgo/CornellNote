@@ -10,6 +10,8 @@
 #import "EJQuestionDetailControllerViewController.h"
 #import "EJQuestionManager.h"
 #import "EJQuestionCellTableViewCell.h"
+#import "EJQAItem.h"
+
 @interface EJContactViewController ()
 @property(nonatomic,strong) NSMutableArray *questions;
 
@@ -71,18 +73,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return 1;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (EJQuestionCellTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    EJQuestionCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"question" forIndexPath:indexPath];
     
-    // Configure the cell...
+    EJQAItem *item = self.questions[indexPath.row];
+    cell.item = item;
+
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

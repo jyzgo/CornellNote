@@ -8,10 +8,7 @@
 
 #import "EJQAItem.h"
 @interface EJQAItem()
-@property(nonatomic,strong) NSString* qustion;
-@property(nonatomic,strong) NSString* answer;
-@property(nonatomic,assign) int rightTime;
-@property(nonatomic,assign) int wrongTime;
+
 
 @end
 
@@ -21,7 +18,7 @@
 {
     if(self = [super init])
     {
-        self.qustion = dict[@"question"];
+        self.question = dict[@"question"];
         self.answer = dict[@"answer"];
         if([dict objectForKey:@"rightTime"])
         {
@@ -38,7 +35,7 @@
 
 -(NSDictionary*) toDict
 {
-    NSDictionary *dict = @{@"question":self.qustion,
+    NSDictionary *dict = @{@"question":self.question,
                            @"answer":self.answer,
                            @"rightTime":[NSNumber numberWithInteger:self.rightTime],
                            @"wrongTime":[NSNumber numberWithInteger: self.wrongTime]};

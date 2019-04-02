@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class EJQAItem;
 @interface EJQuestionCellTableViewCell : UITableViewCell
+
+@property(nonatomic,strong) EJQAItem *item;
 
 @end

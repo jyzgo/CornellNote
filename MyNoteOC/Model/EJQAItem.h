@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface EJQAItem : NSObject
+
+@property(nonatomic,strong) NSString* question;
+@property(nonatomic,strong) NSString* answer;
+@property(nonatomic,assign) int rightTime;
+@property(nonatomic,assign) int wrongTime;
+
 -(instancetype) initWithDict:(NSDictionary*) dict;
 
 -(NSDictionary*) toDict;
